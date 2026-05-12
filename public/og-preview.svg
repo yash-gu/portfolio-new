@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050914"/>
+  <path d="M0 0H1200V630H0V0Z" fill="url(#bg)"/>
+  <path d="M0 0H1200V630H0V0Z" fill="url(#grid)"/>
+  <circle cx="1030" cy="120" r="280" fill="#FDE68A" fill-opacity="0.08"/>
+  <circle cx="180" cy="390" r="360" fill="#2DD4BF" fill-opacity="0.14"/>
+  <rect x="76" y="74" width="1048" height="482" rx="28" fill="#07111F" fill-opacity="0.76" stroke="white" stroke-opacity="0.11"/>
+  <rect x="112" y="112" width="390" height="42" rx="21" fill="#2DD4BF" fill-opacity="0.13" stroke="#5EEAD4" stroke-opacity="0.34"/>
+  <circle cx="136" cy="133" r="6" fill="#5EEAD4"/>
+  <text x="154" y="139" fill="#CCFBF1" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Full-stack developer • AWS certified</text>
+  <text x="112" y="260" fill="white" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-2">Yash Gupta</text>
+  <text x="112" y="330" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="750">Production-grade web apps, cloud</text>
+  <text x="112" y="382" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="750">infrastructure, and real-time backends.</text>
+  <text x="112" y="452" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="500">React • Node.js • MongoDB • AWS • Docker • Terraform • WebSockets</text>
+  <rect x="112" y="494" width="162" height="50" rx="10" fill="#FDE68A"/>
+  <text x="139" y="527" fill="#06131A" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">View Resume</text>
+  <rect x="296" y="494" width="190" height="50" rx="10" fill="#2DD4BF" fill-opacity="0.12" stroke="#5EEAD4" stroke-opacity="0.34"/>
+  <text x="326" y="527" fill="#CCFBF1" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">View Projects</text>
+  <rect x="802" y="130" width="246" height="300" rx="18" fill="#020617" fill-opacity="0.54" stroke="white" stroke-opacity="0.1"/>
+  <circle cx="834" cy="164" r="7" fill="#FB7185"/>
+  <circle cx="858" cy="164" r="7" fill="#FDE68A"/>
+  <circle cx="882" cy="164" r="7" fill="#5EEAD4"/>
+  <text x="832" y="226" fill="#64748B" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ npm run ship</text>
+  <text x="832" y="270" fill="#99F6E4" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">deploying reliable</text>
+  <text x="832" y="302" fill="#99F6E4" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20">user experiences...</text>
+  <rect x="832" y="342" width="174" height="52" rx="8" fill="#2DD4BF" fill-opacity="0.12" stroke="#5EEAD4" stroke-opacity="0.24"/>
+  <text x="854" y="375" fill="#CCFBF1" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">APIs • AWS • IaC</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050914"/>
+      <stop offset="0.56" stop-color="#0B1325"/>
+      <stop offset="1" stop-color="#06131A"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" stroke="#5EEAD4" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+</svg>

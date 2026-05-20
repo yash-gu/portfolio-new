@@ -21,6 +21,16 @@ const certs = [
     border: 'border-sky-500/30',
     badge: 'bg-sky-500/10 text-sky-400 border-sky-500/20',
   },
+  {
+    title: 'AWS Certified AI Practitioner',
+    code: 'AIF-C01',
+    level: 'Foundational',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-ai-practitioner.png',
+    color: 'from-purple-500/20 to-pink-500/10',
+    border: 'border-purple-500/30',
+    badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+  },
 ];
 
 export default function Certifications() {

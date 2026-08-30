@@ -3,6 +3,7 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 const experience = [
   {
     company: 'Probus',
+    logo: '/logos/probus_logo.svg', // Add your Probus logo to public/logos/
     role: 'Software Development Engineer Intern',
     period: 'Jun 2026 – Aug 2026',
     location: 'Noida, India',
@@ -16,6 +17,7 @@ const experience = [
   },
   {
     company: 'Xebia AI',
+    logo: '/logos/xebia_logo.png', // Add your Xebia logo to public/logos/
     role: 'Software Engineering Intern',
     period: 'May 2026 – Jun 2026',
     location: 'Remote',
@@ -45,8 +47,12 @@ export default function Experience() {
             <div className="space-y-12">
               {experience.map((exp, index) => (
                 <div key={index} className="relative flex gap-6 sm:gap-8 group">
-                  <div className={`relative z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 border transition-all duration-300 ${exp.current ? 'bg-teal-400/20 border-teal-400/60 group-hover:bg-teal-400/30' : 'bg-[#0d1428] border-teal-400/30 group-hover:border-teal-400/50'}`}>
-                    <Briefcase size={20} className={exp.current ? 'text-teal-400' : 'text-teal-300'} />
+                  <div className={`relative z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 border transition-all duration-300 overflow-hidden ${exp.current ? 'bg-teal-400/20 border-teal-400/60 group-hover:bg-teal-400/30' : 'bg-[#0d1428] border-teal-400/30 group-hover:border-teal-400/50'}`}>
+                    {exp.logo ? (
+                      <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-cover" />
+                    ) : (
+                      <Briefcase size={20} className={exp.current ? 'text-teal-400' : 'text-teal-300'} />
+                    )}
                   </div>
 
                   <div className={`flex-1 p-5 sm:p-6 rounded-xl transition-all duration-300 border ${exp.current ? 'bg-teal-400/[0.03] border-teal-400/20 hover:border-teal-400/35' : 'bg-white/[0.02] border-white/[0.06] hover:border-white/10'}`}>

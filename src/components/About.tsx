@@ -37,8 +37,8 @@ export default function About() {
                 Email Me
               </a>
               <a
-                href="/YASH_RESUME(4).pdf"
-                download="YASH_RESUME(4).pdf"
+                href="/Yash_Gupta.pdf"
+                download="Yash_Gupta.pdf"
                 className="px-5 py-2.5 rounded-lg border border-amber-200/30 text-amber-100 text-sm font-medium hover:border-amber-200/60 hover:bg-amber-200/10 transition-all duration-200"
               >
                 Resume

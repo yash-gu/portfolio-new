@@ -49,8 +49,8 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-3 mb-10">
             <a
-              href="/YASH_RESUME(4).pdf"
-              download="YASH_RESUME(4).pdf"
+              href="/Yash_Gupta.pdf"
+              download="Yash_Gupta.pdf"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-200 text-[#06131a] font-semibold text-sm hover:bg-amber-100 transition-all duration-200 shadow-lg shadow-amber-200/20"
             >
               <Download size={16} /> Download Resume

@@ -31,6 +31,16 @@ const certs = [
     border: 'border-purple-500/30',
     badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
   },
+  {
+    title: 'AWS Certified Developer – Associate',
+    code: 'DVA-C02',
+    level: 'Associate',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-developer-associate.png',
+    color: 'from-blue-500/20 to-indigo-500/10',
+    border: 'border-blue-500/30',
+    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+  },
 ];
 
 export default function Certifications() {

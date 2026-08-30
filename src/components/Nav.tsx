@@ -4,6 +4,7 @@ import { Menu, X, Code2, Download } from 'lucide-react';
 const links = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'Education', href: '#education' },
@@ -46,8 +47,8 @@ export default function Nav() {
         </ul>
 
         <a
-          href="/YASH_RESUME(4).pdf"
-          download="YASH_RESUME(4).pdf"
+          href="/Yash_Gupta.pdf"
+          download="Yash_Gupta.pdf"
           className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-teal-300/40 text-teal-200 text-sm font-medium hover:bg-teal-300/10 transition-all duration-200"
         >
           <Download size={15} /> Resume
@@ -78,8 +79,8 @@ export default function Nav() {
             ))}
           </ul>
           <a
-            href="/YASH_RESUME(4).pdf"
-            download="YASH_RESUME(4).pdf"
+            href="/Yash_Gupta.pdf"
+            download="Yash_Gupta.pdf"
             className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-teal-300/40 px-4 py-3 text-sm font-semibold text-teal-200 hover:bg-teal-300/10"
             onClick={() => setOpen(false)}
           >

@@ -49,7 +49,7 @@ export default function Experience() {
                 <div key={index} className="relative flex gap-6 sm:gap-8 group">
                   <div className={`relative z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 border transition-all duration-300 overflow-hidden ${exp.current ? 'bg-teal-400/20 border-teal-400/60 group-hover:bg-teal-400/30' : 'bg-[#0d1428] border-teal-400/30 group-hover:border-teal-400/50'}`}>
                     {exp.logo ? (
-                      <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-cover" />
+                      <img src={exp.logo} alt={`${exp.company} logo`} className="w-[75%] h-[75%] object-contain drop-shadow-md" />
                     ) : (
                       <Briefcase size={20} className={exp.current ? 'text-teal-400' : 'text-teal-300'} />
                     )}

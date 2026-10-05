@@ -36,61 +36,7 @@ const certs = [
     badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
     url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
   },
-  {
-    title: 'AWS Certified Developer – Associate',
-    code: 'DVA-C02',
-    level: 'Associate',
-    issuer: 'Amazon Web Services',
-    image: '/certifications/aws-developer-associate.png',
-    color: 'from-blue-500/20 to-indigo-500/10',
-    border: 'border-blue-500/30',
-    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
-  },
-  {
-    title: 'AWS Certified SysOps Administrator – Associate',
-    code: 'SOA-C02',
-    level: 'Associate',
-    issuer: 'Amazon Web Services',
-    image: '/certifications/aws-sysops-administrator-associate.png',
-    color: 'from-green-500/20 to-emerald-500/10',
-    border: 'border-green-500/30',
-    badge: 'bg-green-500/10 text-green-400 border-green-500/20',
-    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
-  },
-  // --- GITHUB ---
-  {
-    title: 'GitHub Foundations',
-    code: 'GHF',
-    level: 'Foundational',
-    issuer: 'GitHub',
-    image: '/certifications/github-foundations.png',
-    color: 'from-gray-500/20 to-slate-500/10',
-    border: 'border-gray-500/30',
-    badge: 'bg-gray-500/10 text-gray-400 border-gray-500/20',
-    url: 'https://www.credly.com/org/github/badge/github-foundations', // Replace with your specific Credly link
-  },
-  {
-    title: 'GitHub Copilot',
-    code: 'GHC',
-    level: 'Foundational',
-    issuer: 'GitHub',
-    image: '/certifications/github-copilot.png',
-    color: 'from-teal-500/20 to-cyan-500/10',
-    border: 'border-teal-500/30',
-    badge: 'bg-teal-500/10 text-teal-400 border-teal-500/20',
-    url: 'https://www.credly.com/org/github/badge/github-copilot-foundations', // Replace with your specific Credly link
-  },
-  {
-    title: 'AWS Certified Developer – Associate',
-    code: 'DVA-C02',
-    level: 'Associate',
-    issuer: 'Amazon Web Services',
-    image: '/certifications/aws-developer-associate.png',
-    color: 'from-blue-500/20 to-indigo-500/10',
-    border: 'border-blue-500/30',
-    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-  },
+
 ];
 
 export default function Certifications() {

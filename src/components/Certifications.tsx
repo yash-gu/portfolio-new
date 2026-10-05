@@ -36,7 +36,17 @@ const certs = [
     badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
     url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
   },
-
+  {
+    title: 'AWS Certified Developer – Associate',
+    code: 'DVA-C02',
+    level: 'Associate',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-developer-associate.png',
+    color: 'from-blue-500/20 to-indigo-500/10',
+    border: 'border-blue-500/30',
+    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
+  },
 ];
 
 export default function Certifications() {

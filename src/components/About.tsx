@@ -2,7 +2,7 @@ import { Award, Code, Cloud, Zap } from 'lucide-react';
 
 const highlights = [
   { icon: Code, label: '200+ DSA', sub: 'problems solved' },
-  { icon: Cloud, label: '2x AWS', sub: 'certified' },
+  { icon: Cloud, label: '4x AWS', sub: 'certified' },
   { icon: Award, label: '9.2 CGPA', sub: 'B.Tech CSE' },
   { icon: Zap, label: 'MERN Stack', sub: 'full-stack dev' },
 ];
@@ -37,8 +37,8 @@ export default function About() {
                 Email Me
               </a>
               <a
-                href="/Yash_Gupta.pdf"
-                download="Yash_Gupta.pdf"
+                href="/Yash_Gupta_Resume.pdf"
+                download="Yash_Gupta_Resume.pdf"
                 className="px-5 py-2.5 rounded-lg border border-amber-200/30 text-amber-100 text-sm font-medium hover:border-amber-200/60 hover:bg-amber-200/10 transition-all duration-200"
               >
                 Resume

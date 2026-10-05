@@ -18,22 +18,27 @@ export default function Hackathons() {
               </div>
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="font-bold text-white text-lg">Smart Bennett Hackathon</h3>
+                  <h3 className="font-bold text-white text-lg">Smart Bennett Hackathon (SIH)</h3>
                   <span className="px-2 py-0.5 rounded-md bg-emerald-400/10 text-emerald-400 text-xs font-medium border border-emerald-400/20">2026</span>
                 </div>
-                <p className="text-emerald-400 text-sm font-medium">Participant</p>
+                <p className="text-emerald-400 text-sm font-medium">Team Lead &middot; 26th / 591 Teams</p>
               </div>
             </div>
 
             <div className="mb-4">
               <p className="text-gray-300 font-semibold mb-1">Beej Setu — Agriculture Technology Solution</p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Collaborated in a 6-member team to build a gamified platform simplifying access to government agricultural
+                Led a 6-member team to build a gamified platform simplifying access to government agricultural
                 schemes. Integrated an AI chatbot to help farmers understand policy eligibility and documentation.
+                Secured 26th position out of 591 competing teams.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
+              <div className="flex items-center gap-2 text-xs text-emerald-500 font-medium">
+                <Trophy size={13} />
+                Ranked 26th
+              </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <Users size={13} className="text-gray-600" />
                 6-member team

@@ -1,16 +1,7 @@
-import { ShieldCheck } from 'lucide-react';
+import { ShieldCheck, ExternalLink } from 'lucide-react';
 
 const certs = [
-  {
-    title: 'AWS Certified Solutions Architect – Associate',
-    code: 'SAA-C03',
-    level: 'Associate',
-    issuer: 'Amazon Web Services',
-    image: '/certifications/aws-solutions-architect-associate.png',
-    color: 'from-amber-500/20 to-orange-500/10',
-    border: 'border-amber-500/30',
-    badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-  },
+  // --- AWS FOUNDATIONAL ---
   {
     title: 'AWS Certified Cloud Practitioner',
     code: 'CLF-C02',
@@ -20,6 +11,7 @@ const certs = [
     color: 'from-sky-500/20 to-blue-500/10',
     border: 'border-sky-500/30',
     badge: 'bg-sky-500/10 text-sky-400 border-sky-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
   },
   {
     title: 'AWS Certified AI Practitioner',
@@ -30,6 +22,64 @@ const certs = [
     color: 'from-purple-500/20 to-pink-500/10',
     border: 'border-purple-500/30',
     badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
+  },
+  // --- AWS ASSOCIATE ---
+  {
+    title: 'AWS Certified Solutions Architect – Associate',
+    code: 'SAA-C03',
+    level: 'Associate',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-solutions-architect-associate.png',
+    color: 'from-amber-500/20 to-orange-500/10',
+    border: 'border-amber-500/30',
+    badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
+  },
+  {
+    title: 'AWS Certified Developer – Associate',
+    code: 'DVA-C02',
+    level: 'Associate',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-developer-associate.png',
+    color: 'from-blue-500/20 to-indigo-500/10',
+    border: 'border-blue-500/30',
+    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
+  },
+  {
+    title: 'AWS Certified SysOps Administrator – Associate',
+    code: 'SOA-C02',
+    level: 'Associate',
+    issuer: 'Amazon Web Services',
+    image: '/certifications/aws-sysops-administrator-associate.png',
+    color: 'from-green-500/20 to-emerald-500/10',
+    border: 'border-green-500/30',
+    badge: 'bg-green-500/10 text-green-400 border-green-500/20',
+    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/YOUR_ID_HERE', // Replace with your link
+  },
+  // --- GITHUB ---
+  {
+    title: 'GitHub Foundations',
+    code: 'GHF',
+    level: 'Foundational',
+    issuer: 'GitHub',
+    image: '/certifications/github-foundations.png',
+    color: 'from-gray-500/20 to-slate-500/10',
+    border: 'border-gray-500/30',
+    badge: 'bg-gray-500/10 text-gray-400 border-gray-500/20',
+    url: 'https://www.credly.com/org/github/badge/github-foundations', // Replace with your specific Credly link
+  },
+  {
+    title: 'GitHub Copilot',
+    code: 'GHC',
+    level: 'Foundational',
+    issuer: 'GitHub',
+    image: '/certifications/github-copilot.png',
+    color: 'from-teal-500/20 to-cyan-500/10',
+    border: 'border-teal-500/30',
+    badge: 'bg-teal-500/10 text-teal-400 border-teal-500/20',
+    url: 'https://www.credly.com/org/github/badge/github-copilot-foundations', // Replace with your specific Credly link
   },
   {
     title: 'AWS Certified Developer – Associate',
@@ -55,27 +105,44 @@ export default function Certifications() {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {certs.map((cert) => (
-            <div
+            <a
               key={cert.code}
-              className={`flex items-center gap-5 p-6 rounded-lg bg-gradient-to-br ${cert.color} border ${cert.border} hover:scale-[1.015] hover:bg-white/[0.04] transition-all duration-300`}
+              href={cert.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group flex items-center gap-5 p-6 rounded-lg bg-gradient-to-br ${cert.color} border ${cert.border} hover:scale-[1.015] hover:bg-white/[0.04] transition-all duration-300 cursor-pointer block`}
             >
-              <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center rounded-lg bg-white/[0.04] p-3 ring-1 ring-white/10">
+              {/* Badge Container */}
+              <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center rounded-lg bg-white/[0.04] p-3 ring-1 ring-white/10 group-hover:ring-white/20 transition-all">
                 <img
                   src={cert.image}
                   alt={`${cert.title} badge`}
-                  className="h-full w-full object-contain drop-shadow-2xl"
+                  className="h-full w-full object-contain drop-shadow-2xl transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
-              <div className="min-w-0">
+
+              {/* Text Content */}
+              <div className="min-w-0 flex-1">
                 <div className={`mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-bold ${cert.badge}`}>
                   <ShieldCheck size={13} />
                   {cert.code}
                 </div>
-                <h3 className="text-white font-bold text-lg leading-snug mb-2">{cert.title}</h3>
-                <p className="text-gray-400 text-sm">{cert.issuer} • {cert.level}</p>
+                
+                <h3 className="text-white font-bold text-lg leading-snug mb-2 group-hover:text-cyan-300 transition-colors duration-200">
+                  {cert.title}
+                </h3>
+                
+                <div className="flex items-center justify-between gap-2 mt-1">
+                  <p className="text-gray-400 text-sm truncate">{cert.issuer} • {cert.level}</p>
+                  
+                  {/* Visual hint that the card is a link */}
+                  <span className="text-gray-500 group-hover:text-cyan-400 transition-colors flex-shrink-0">
+                    <ExternalLink size={14} />
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

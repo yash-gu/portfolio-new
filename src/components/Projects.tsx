@@ -1,4 +1,4 @@
-import { Github, ExternalLink, Server, Globe, BookOpen, ShoppingBag } from 'lucide-react';
+import { Github, ExternalLink, Server, Globe, BookOpen, ShoppingBag, MessageSquare } from 'lucide-react';
 
 const projects = [
   {
@@ -34,6 +34,19 @@ const projects = [
       'Peer-to-peer campus marketplace with live messaging, secure product listings, and AWS-backed media storage. Socket.io keeps buyer-seller conversations responsive.',
     highlights: ['P2P marketplace', 'Real-time chat', 'AWS EC2 + S3', 'Secure auth'],
     demo: '#',
+    featured: true,
+  },
+  {
+    title: 'Real-Time Messenger',
+    subtitle: 'Chat Application',
+    year: '2026',
+    icon: MessageSquare,
+    stack: ['Next.js', 'FastAPI', 'aiosqlite', 'WebSockets'],
+    description:
+      'A real-time messenger application built with Next.js frontend and FastAPI backend. Uses aiosqlite for asynchronous database operations and WebSockets for instant message delivery.',
+    highlights: ['Real-time messaging', 'FastAPI Backend', 'Async DB', 'Next.js UI'],
+    github: 'https://github.com/yash-gu',
+    demo: 'http://13.206.77.155:8765/',
     featured: true,
   },
 ];
